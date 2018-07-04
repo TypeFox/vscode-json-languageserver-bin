@@ -1,6 +1,6 @@
 {
-  "name": "vscode-json-languageserver-bin",
-  "version": "1.0.1",
+  "name": "@theia/vscode-json-languageserver-bin",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vscode-langservers/vscode-json-languageserver-bin.git"
@@ -22,5 +22,9 @@
     "publish": "npm run build && npm run mergePackages && npm publish dist",
     "pack": "npm run build && npm run mergePackages && npm pack dist",
     "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "np": "^3.0.4",
+    "npx": "^10.2.0"
   }
 }
